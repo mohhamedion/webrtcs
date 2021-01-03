@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechnoPark</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style> 
+    body{
+        background-color: #333333c9;
+    }
+    video {
+    width: 500px;
+    }
+    </style>
+</head>
+
+
+<body>
+        <div class="container">
+            
+            <div class="mt-5">
+                <h1 class="text-center text-white">Welcome to TechnoPark</h1>
+                <div id="link-generator" class="text-center row mt-5">
+                     <input id='generate' type="text" class="form-control col-10 ">
+                     <button class="btn btn-danger col-2" onClick="generateCode()" >Generate</button>
+                </div>
+            </div>
+
+        </div>
+
+
+
+</body>
+
+<script>
+
+ 
+const generate = document.getElementById('generate');
+const websiteLink =`file:///C:/Users/mohamad/Desktop/webrtc/index.html`;
+
+ 
+ 
+function generateCode(){
+     generate.value  =    websiteLink+'?code=' + 123123123123;
+}
+
+
+
+</script>
+ 
+</html>
